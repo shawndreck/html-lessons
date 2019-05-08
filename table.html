@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Having fun with form</h1>
+
+<p>
+    A form is a way to collect data from users. It usually contains inputs, select, textarea, and buttons.
+</p>
+
+<p>Usually a form has action property: which determines where the data is to be sent to  when submitted. The method property determines "how" they data will be sent.
+Two available methods are GET and POST</p>
+
+<h2>Inputs</h2>
+<p>The type of input usually affects its appearance in the browser. An input can be of type: text, password, date,number, email, checkbox, radio, etc</p>
+<p>Input needs a name property is the data needs to be sent to the form "action"</p>
+
+<form action="#destination-url" method="get">
+
+    <div>
+        
+        <label for="fullname">Full Name</label>
+        <input type="text" name="username" id="fullname" required aria-required="true" min="5">
+
+        <label for="email">Email</label>
+        <input type="text" name="username" id="email" required aria-required="true">
+        
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+
+        <label for="title">Title: (Mr/Mrs/Dr/)</label>
+        <input type="text" name="username" id="title" required aria-required="true" min="2" max="4" size="4" maxlength="4">
+
+    </div>
+
+    <div>
+        
+        <h3>Date and Time</h3>
+        <label for="date">Time</label>
+        <input type="date" name="username" id="date">
+
+        <label for="time">Date</label>
+        <input type="time" name="username" id="time">
+    </div>
+
+    <div>
+        <h3>Number and Telephone</h3>
+        <label for="number">Number</label>
+        <input type="number" name="username" id="number">
+
+        <label for="phone">Contact Number</label>
+        <input type="tel" name="username" id="phone">
+
+    </div>
+
+    <div>
+        <h3>Checkbox</h3>
+
+        <label for="tennis">
+            <input type="checkbox" name="hobbies" id="tennis"> Tennis
+        </label>
+
+        <label for="swimming">
+            <input type="checkbox" name="hobbies" id="swimming" value="swimming"> Swimming
+        </label>
+
+        <label for="badminton">
+            <input type="checkbox" name="hobbies" id="badminton"> Badminton
+        </label>
+        <label for="soccer">
+            <input type="checkbox" name="hobbies" id="soccer"> Soccer
+        </label>
+    </div>
+
+    <div>
+        <h3>Radio</h3>
+        <p>Only on option can be selected at a time</p>
+        <label for="radio1"><input type="radio" name="radio" id="radio1">Radio One</label>
+        <label for="radio2"><input type="radio" name="radio" id="radio2">Radio Two</label>
+        <label for="radio3"><input type="radio" name="radio" id="radio3">Radio Three</label>
+        <label for="radio4"><input type="radio" name="radio" id="radio4">Radio Four</label>
+        <label for="radio5"><input type="radio" name="radio" id="radio5">Radio Five</label>
+
+    </div>
+
+    <h3>Select Box</h3>
+    <label for="choice">Nationality</label>
+    <select name="choices" id="choice">
+        <option>-- Select one --</option>
+        <option value="Ghanaian">Ghanaian</option>
+        <option value="Belgian">Belgian</option>
+        <option value="Japanese">Japanese</option>
+    </select>
+
+    <div>
+        <!--    <input type="button" value="BUTTON">-->
+        <!--    <input type="submit" value="LOGIN">-->
+        <button type="submit">SUBMIT NOW</button>
+    </div>
+</form>
+</body>
+</html>
